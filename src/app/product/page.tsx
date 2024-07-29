@@ -34,7 +34,7 @@ export default function Home() {
                         <div className="text-gray-500 pt-4 text-lg md:text-2xl intro-animate-text">
                             <span className="block">Step into the future of technology with advanced SLAM and robotics, a</span>
                             <span className="block">groundbreaking platform that seamlessly integrates Lidar, SLAM algorithms,</span>
-                            <span className="block">and ROS2 via our robotics kit. Let's explore how this technology is</span>
+                            <span className="block">and ROS2 via our robotics kit. Let&#39;s explore how this technology is</span>
                             <span className="block">revolutionizing our interaction with the world.</span>
                         </div>
                     </section>

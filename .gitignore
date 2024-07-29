@@ -41,7 +41,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# custom typings
-three-externals.d.ts
-dat.gui.d.ts

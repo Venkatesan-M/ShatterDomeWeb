@@ -4,6 +4,7 @@ import ASScroll from '@ashthornton/asscroll';
 
 const useASScroll = () => {
   useEffect(() => {
+    if (typeof window !== 'undefined') {
     const initASScroll = () => {
       if (typeof window !== 'undefined') {
         const asscrollElement = document.querySelector('.asscroll');
@@ -24,6 +25,7 @@ const useASScroll = () => {
     return () => {
       clearTimeout(timeoutId);
     };
+  }
   }, []);
 };
 

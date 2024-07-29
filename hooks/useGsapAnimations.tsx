@@ -10,6 +10,7 @@ const useGsapAnimations = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
     if (sectionRef.current) {
       // Intro animation on load
       gsap.fromTo(
@@ -55,6 +56,7 @@ const useGsapAnimations = () => {
         ScrollTrigger.getAll().forEach(trigger => trigger.kill());
       };
     }
+  }
   }, []);
 
   return sectionRef;
