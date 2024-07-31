@@ -4,9 +4,11 @@ import React from 'react';
 import Image from 'next/image';
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
-import ThreeScene from '../../components/ThreeScene';
 import useGsapAnimations from '../../hooks/useGsapAnimations';
 import useASScroll from '../../hooks/useASScroll';
+import dynamic from 'next/dynamic';
+const ThreeScene = dynamic(() => import('../../components/ThreeScene'), { ssr: false });
+
 
 export default function Home() {
   const sectionRef = useGsapAnimations();
